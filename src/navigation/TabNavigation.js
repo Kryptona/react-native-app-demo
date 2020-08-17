@@ -17,23 +17,30 @@ export const TabsNavigation = () => {
     return (
         <NavigationContainer>
             <Tab.Navigator
-                tabBarOptions={{
-                activeTintColor: THEME.POWDER_PURUPURE
-            }}>
+                initialRouteName="Blog"
+                shifting={true}
+                // barStyle={{ backgroundColor: '#694fad' }}
+
+            >
                 <Tab.Screen
                     name="Blog"
                     component={AppNavigation}
+                    // barStyle={{ backgroundColor: THEME.LIGHT_PINK }}
+                    // inactiveColor={THEME.SITY_SKY}
                     options={{
+                        tabBarColor: THEME.LIGHT_PINK,
                         tabBarLabel: 'Все',
                         tabBarIcon: ({color, size}) => (
-                            <Ionicons name="ios-albums" size={24} color={color} />
+                            <Ionicons name="ios-albums" size={24} color={color}/>
                         ),
                     }}
                 />
-                <Tab.Screen 
-                    name="Booked" 
+                <Tab.Screen
+                    name="Booked"
                     component={BookedScreenNavigator}
+                    // barStyle={{ backgroundColor: THEME.SITY_SKY }}
                     options={{
+                        tabBarColor: THEME.SITY_SKY,
                         tabBarLabel: 'Избранное',
                         tabBarIcon: ({color, size}) => (
                             <Ionicons name="ios-star" size={24} color={color}/>
