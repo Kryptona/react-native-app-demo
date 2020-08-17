@@ -4,7 +4,6 @@ import * as React from "react";
 import {createStackNavigator} from "@react-navigation/stack";
 import {PostScreen} from "../screens/PostScreen";
 
-
 const Booked = createStackNavigator();
 
 export function BookedScreenNavigator() {
@@ -17,8 +16,22 @@ export function BookedScreenNavigator() {
                 headerTintColor: THEME.WHITE_PINK,
             }}
         >
-            <Booked.Screen name="Booked" component={BookedScreen} />
-            <Booked.Screen name="PostScreen" component={PostScreen} />
+            <Booked.Screen
+                name="Booked"
+                component={BookedScreen}
+                options={{
+                    title: BookedScreen.options.headerTitle,
+                    headerLeft: () => (
+                        BookedScreen.options.headerLeft
+                    )
+                }}
+            
+            />
+            <Booked.Screen
+                name="PostScreen"
+                component={PostScreen}
+                options={PostScreen.options}
+            />
         </Booked.Navigator>
     );
 }

@@ -8,7 +8,6 @@ import {THEME} from "../theme";
 const PostNavigator = createStackNavigator();
 
 export const AppNavigation = () => (
-    //<NavigationContainer>
     <PostNavigator.Navigator
         initialRouteName="MainScreen"
         headerMode="screen"
@@ -39,7 +38,6 @@ export const AppNavigation = () => (
             }}
         />
     </PostNavigator.Navigator>
-    //</NavigationContainer>
 );
 
 

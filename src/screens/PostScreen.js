@@ -45,8 +45,7 @@ export const PostScreen = ({route}) => {
 };
 
 PostScreen.options = ({route}) => {
-    const date = route.params.date;
-    const isBooked = route.params.isBooked;
+    const {date, isBooked} = route.params;
     
     const iconName = isBooked ? 'ios-star' : 'ios-star-outline';
     return {
