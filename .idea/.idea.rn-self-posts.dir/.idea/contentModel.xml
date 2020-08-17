@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\TestRiderProjects\rn-self-posts" t="IncludeFlat">
+      <e p=".git\info\exclude" t="IncludeRecursive" />
+      <e p="node_modules\@babel\core" t="IncludeRecursive" />
+      <e p="node_modules\@callstack\react-theme-provider" t="IncludeRecursive" />
+      <e p="node_modules\@egjs\hammerjs" t="IncludeRecursive" />
+      <e p="node_modules\@expo\vector-icons" t="IncludeRecursive" />
+      <e p="node_modules\@react-native-community\masked-view" t="IncludeRecursive" />
+      <e p="node_modules\@react-navigation\bottom-tabs" t="IncludeRecursive" />
+      <e p="node_modules\@react-navigation\core" t="IncludeRecursive" />
+      <e p="node_modules\@react-navigation\material-bottom-tabs" t="IncludeRecursive" />
+      <e p="node_modules\@react-navigation\native" t="IncludeRecursive" />
+      <e p="node_modules\@react-navigation\routers" t="IncludeRecursive" />
+      <e p="node_modules\@react-navigation\stack" t="IncludeRecursive" />
+      <e p="node_modules\@types" t="IncludeRecursive">
+        <e p="istanbul-lib-coverage" t="IncludeRecursive" />
+        <e p="istanbul-lib-report" t="IncludeRecursive" />
+        <e p="yargs-parser" t="IncludeRecursive" />
+      </e>
+      <e p="node_modules\@unimodules\core" t="IncludeRecursive" />
+      <e p="node_modules\@unimodules\react-native-adapter" t="IncludeRecursive" />
+      <e p="node_modules\babel-preset-expo" t="IncludeRecursive" />
+      <e p="node_modules\badgin" t="IncludeRecursive" />
+      <e p="node_modules\chalk" t="IncludeRecursive" />
+      <e p="node_modules\compare-versions" t="IncludeRecursive" />
+      <e p="node_modules\expo" t="IncludeRecursive" />
+      <e p="node_modules\expo-asset" t="IncludeRecursive" />
+      <e p="node_modules\expo-constants" t="IncludeRecursive" />
+      <e p="node_modules\expo-error-recovery" t="IncludeRecursive" />
+      <e p="node_modules\expo-file-system" t="IncludeRecursive" />
+      <e p="node_modules\expo-font" t="IncludeRecursive" />
+      <e p="node_modules\expo-keep-awake" t="IncludeRecursive" />
+      <e p="node_modules\expo-linear-gradient" t="IncludeRecursive" />
+      <e p="node_modules\expo-linking" t="IncludeRecursive" />
+      <e p="node_modules\expo-location" t="IncludeRecursive" />
+      <e p="node_modules\expo-permissions" t="IncludeRecursive" />
+      <e p="node_modules\expo-splash-screen" t="IncludeRecursive" />
+      <e p="node_modules\expo-sqlite" t="IncludeRecursive" />
+      <e p="node_modules\expo-status-bar" t="IncludeRecursive" />
+      <e p="node_modules\hoist-non-react-statics" t="IncludeRecursive" />
+      <e p="node_modules\nullthrows" t="IncludeRecursive" />
+      <e p="node_modules\react" t="IncludeRecursive" />
+      <e p="node_modules\react-dom" t="IncludeRecursive" />
+      <e p="node_modules\react-native" t="IncludeRecursive" />
+      <e p="node_modules\react-native-appearance" t="IncludeRecursive" />
+      <e p="node_modules\react-native-gesture-handler" t="IncludeRecursive" />
+      <e p="node_modules\react-native-iphone-x-helper" t="IncludeRecursive" />
+      <e p="node_modules\react-native-paper" t="IncludeRecursive" />
+      <e p="node_modules\react-native-reanimated" t="IncludeRecursive" />
+      <e p="node_modules\react-native-safe-area-context" t="IncludeRecursive" />
+      <e p="node_modules\react-native-screens" t="IncludeRecursive" />
+      <e p="node_modules\react-native-web" t="IncludeRecursive" />
+      <e p="node_modules\react-navigation-header-buttons" t="IncludeRecursive" />
+      <e p="node_modules\unimodules-permissions-interface" t="IncludeRecursive" />
+    </e>
+    <e p="C:\Users\Дарья\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Дарья\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_.19.00" t="ExcludeRecursive" />
+  </component>
+</project>
