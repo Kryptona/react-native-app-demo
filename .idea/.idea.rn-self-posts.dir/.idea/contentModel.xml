@@ -10,6 +10,7 @@
       <e p="node_modules\@react-native-community\masked-view" t="IncludeRecursive" />
       <e p="node_modules\@react-navigation\bottom-tabs" t="IncludeRecursive" />
       <e p="node_modules\@react-navigation\core" t="IncludeRecursive" />
+      <e p="node_modules\@react-navigation\drawer" t="IncludeRecursive" />
       <e p="node_modules\@react-navigation\material-bottom-tabs" t="IncludeRecursive" />
       <e p="node_modules\@react-navigation\native" t="IncludeRecursive" />
       <e p="node_modules\@react-navigation\routers" t="IncludeRecursive" />

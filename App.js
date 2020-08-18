@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import {TabsNavigation} from "./src/navigation/TabNavigation";
 import {AppLoading} from 'expo';
 import {bootstrap} from "./src/bootstrap";
+import {MainNavigator} from './src/navigation/MainDrawerNavigator';
 
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
         />
     }
     return (       
-        <TabsNavigation/>
+        //<TabsNavigation/>
+        <MainNavigator/>
     );
 }

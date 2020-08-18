@@ -27,15 +27,7 @@ export const AppNavigation = () => (
         <PostNavigator.Screen
             name="MainScreen"
             component={MainScreen}
-            options={{
-                title: MainScreen.options.headerTitle,
-                headerRight: () => (
-                    MainScreen.options.headerRight
-                ),
-                headerLeft: () => (
-                    MainScreen.options.headerLeft
-                )
-            }}
+            options={MainScreen.options}
         />
     </PostNavigator.Navigator>
 );

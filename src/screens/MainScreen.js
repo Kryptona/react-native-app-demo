@@ -8,20 +8,28 @@ export const MainScreen = ({navigation}) => {
     const openPostHandler = (post) => {
         navigation.navigate('PostScreen', {postId: post.id, date: post.date, isBooked: post.isBooked})
     };
-    return <PostList data={DATA} onOpne={openPostHandler}/>
-    
+    return <PostList data={DATA} onOpen={openPostHandler}/>
+
 };
 
-MainScreen.options = {
-    headerTitle: 'Мой блог',
-    headerRight: (
+MainScreen.options = ({navigation}) => ({
+    title: 'Мой блог',
+    headerRight: () => (
         <HeaderButtons HeaderButtonComponent={AppHeaderIcon}>
-            <Item title="Take a photo" iconName="ios-camera" onPress={() => console.log("1234")}/>
+            <Item
+                title="Take a photo"
+                iconName="ios-camera"
+                onPress={() => console.log("1234")}
+            />
         </HeaderButtons>
     ),
-    headerLeft: (
+    headerLeft: () => (
         <HeaderButtons HeaderButtonComponent={AppHeaderIcon}>
-            <Item title="Toggle Drawer" iconName="ios-menu" onPress={() => console.log("1234")}/>
+            <Item
+                title="Toggle Drawer"
+                iconName="ios-menu"
+                onPress={() => navigation.toggleDrawer()}
+            />
         </HeaderButtons>
     )
-};
+});
