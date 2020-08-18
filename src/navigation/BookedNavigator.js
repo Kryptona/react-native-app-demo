@@ -19,13 +19,7 @@ export function BookedScreenNavigator() {
             <Booked.Screen
                 name="Booked"
                 component={BookedScreen}
-                options={{
-                    title: BookedScreen.options.headerTitle,
-                    headerLeft: () => (
-                        BookedScreen.options.headerLeft
-                    )
-                }}
-            
+                options={BookedScreen.options}            
             />
             <Booked.Screen
                 name="PostScreen"

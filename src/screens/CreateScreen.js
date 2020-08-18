@@ -1,5 +1,6 @@
 ﻿import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
+import {DrawerButton} from "../components/DrawerButton";
 
 export const CreateScreen = ({}) => {
     return (
@@ -10,6 +11,13 @@ export const CreateScreen = ({}) => {
         </View>
     )
 };
+
+CreateScreen.options = ({navigation}) => ({
+    title: 'Создание поста',
+    headerLeft: () => (
+        <DrawerButton navigation={navigation}/>
+    )
+});
 
 const styles = StyleSheet.create({
     center: {

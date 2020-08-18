@@ -4,6 +4,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {MainScreen} from "../screens/MainScreen";
 import {PostScreen} from "../screens/PostScreen";
 import {THEME} from "../theme";
+import {CreateScreen} from "../screens/CreateScreen";
 
 const PostNavigator = createStackNavigator();
 
@@ -28,6 +29,11 @@ export const AppNavigation = () => (
             name="MainScreen"
             component={MainScreen}
             options={MainScreen.options}
+        />
+        <PostNavigator.Screen
+            name="CreateScreen"
+            component={CreateScreen}
+            options={CreateScreen.options}
         />
     </PostNavigator.Navigator>
 );

@@ -1,5 +1,7 @@
 ﻿import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
+import {DrawerButton} from "../components/DrawerButton";
+import {CreateScreen} from "./CreateScreen";
 
 export const AboutScreen = ({}) => {
     return (
@@ -10,6 +12,13 @@ export const AboutScreen = ({}) => {
         </View>
     )
 };
+
+AboutScreen.options = ({navigation}) => ({
+    title: 'О разработчиках',
+    headerLeft: () => (
+        <DrawerButton navigation={navigation}/>
+    )
+});
 
 const styles = StyleSheet.create({
     center: {

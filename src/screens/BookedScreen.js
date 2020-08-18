@@ -5,6 +5,7 @@ import {Post} from "../components/Post";
 import {HeaderButtons, Item} from "react-navigation-header-buttons";
 import {AppHeaderIcon} from "../components/AppHeaderIcon";
 import {PostList} from "../components/PostList";
+import {DrawerButton} from "../components/DrawerButton";
 
 
 export const BookedScreen = ({navigation}) => {
@@ -16,11 +17,9 @@ export const BookedScreen = ({navigation}) => {
     
 };
 
-BookedScreen.options = {
+BookedScreen.options = ({navigation}) => ({
     headerTitle: 'Избранное',
-    headerLeft: (
-        <HeaderButtons HeaderButtonComponent={AppHeaderIcon}>
-            <Item title="Toggle Drawer" iconName="ios-menu"/>
-        </HeaderButtons>
+    headerLeft: () => (
+        <DrawerButton navigation={navigation}/>
     )
-};
+});

@@ -11,11 +11,9 @@ const Tab = createMaterialBottomTabNavigator();
 
 export const TabsNavigation = () => {
     return (
-        //<NavigationContainer>
             <Tab.Navigator
                 initialRouteName="Blog"
                 shifting={true}
-
             >
                 <Tab.Screen
                     name="Blog"
@@ -40,6 +38,5 @@ export const TabsNavigation = () => {
                     }}
                 />
             </Tab.Navigator>
-        //</NavigationContainer>
     );
 };

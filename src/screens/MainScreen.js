@@ -3,6 +3,7 @@ import {HeaderButtons, Item} from "react-navigation-header-buttons";
 import {DATA} from "../data";
 import {AppHeaderIcon} from "../components/AppHeaderIcon";
 import {PostList} from "../components/PostList";
+import {DrawerButton} from "../components/DrawerButton";
 
 export const MainScreen = ({navigation}) => {
     const openPostHandler = (post) => {
@@ -19,17 +20,11 @@ MainScreen.options = ({navigation}) => ({
             <Item
                 title="Take a photo"
                 iconName="ios-camera"
-                onPress={() => console.log("1234")}
+                onPress={() => navigation.push('CreateScreen')}
             />
         </HeaderButtons>
     ),
     headerLeft: () => (
-        <HeaderButtons HeaderButtonComponent={AppHeaderIcon}>
-            <Item
-                title="Toggle Drawer"
-                iconName="ios-menu"
-                onPress={() => navigation.toggleDrawer()}
-            />
-        </HeaderButtons>
+        <DrawerButton navigation={navigation}/>
     )
 });
