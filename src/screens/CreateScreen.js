@@ -13,7 +13,7 @@ export const CreateScreen = ({}) => {
 };
 
 CreateScreen.options = ({navigation}) => ({
-    title: 'Создание поста',
+    title: 'Создать пост',
     headerLeft: () => (
         <DrawerButton navigation={navigation}/>
     )

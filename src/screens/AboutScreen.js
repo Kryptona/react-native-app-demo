@@ -7,14 +7,15 @@ export const AboutScreen = ({}) => {
     return (
         <View style={styles.center}>
             <Text>
-                AboutScreen
+                Это приложение для личных заметок
             </Text>
+            <Text>Версия приложения <Text style={styles.version}>1.0.0</Text></Text>
         </View>
     )
 };
 
 AboutScreen.options = ({navigation}) => ({
-    title: 'О разработчиках',
+    title: 'О приложении',
     headerLeft: () => (
         <DrawerButton navigation={navigation}/>
     )
@@ -25,5 +26,8 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+    },
+    version: {
+        fontFamily: 'open-bold'
     }
 });
