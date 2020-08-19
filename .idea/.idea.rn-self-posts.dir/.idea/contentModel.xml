@@ -54,6 +54,10 @@
       <e p="node_modules\react-native-screens" t="IncludeRecursive" />
       <e p="node_modules\react-native-web" t="IncludeRecursive" />
       <e p="node_modules\react-navigation-header-buttons" t="IncludeRecursive" />
+      <e p="node_modules\react-redux" t="IncludeRecursive" />
+      <e p="node_modules\redux" t="IncludeRecursive" />
+      <e p="node_modules\rxjs" t="IncludeRecursive" />
+      <e p="node_modules\symbol-observable" t="IncludeRecursive" />
       <e p="node_modules\unimodules-permissions-interface" t="IncludeRecursive" />
     </e>
     <e p="C:\Users\Дарья\.Rider2019.2\system\extResources" t="IncludeRecursive" />
