@@ -1,5 +1,15 @@
-﻿const initalState = {}
+﻿import {LOAD_POSTS} from "../types";
 
-export const postReducer = (state = initalState, action) => {
-    return state;
-}
+const initialState = {
+    allPosts: [],
+    bookedPosts: []
+};
+
+export const postReducer = (state = initialState, action) => {
+    switch (action.type) {
+        case LOAD_POSTS:
+            return {...state, allPosts: action.payload, bookedPosts: action.payload.filter(post => post.isBooked)};
+        default:
+            return state
+    }
+};
