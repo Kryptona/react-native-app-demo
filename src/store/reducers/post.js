@@ -1,4 +1,4 @@
-﻿import {LOAD_POSTS, TOGGLE_BOOKED} from "../types";
+﻿import {LOAD_POSTS, REMOVE_POST, TOGGLE_BOOKED} from "../types";
 
 const initialState = {
     allPosts: [],
@@ -9,7 +9,15 @@ export const postReducer = (state = initialState, action) => {
     switch (action.type) {
         case LOAD_POSTS:
             return {...state, allPosts: action.payload, bookedPosts: action.payload.filter(post => post.isBooked)};
-            
+
+        case REMOVE_POST:
+            console.log("reducer");
+            return {
+                ...state, 
+                allPosts: state.allPosts.filter(post => post.id !== action.payload), 
+                bookedPosts: state.bookedPosts.filter(post => post.id !== action.payload)
+            };
+
         case TOGGLE_BOOKED:
             const allPosts = state.allPosts.map(post => {
                 if (post.id === action.payload) {
@@ -18,7 +26,7 @@ export const postReducer = (state = initialState, action) => {
                 return post;
             });
             return {...state, allPosts, bookedPosts: allPosts.filter(post => post.isBooked)};
-            
+
         default:
             return state
     }

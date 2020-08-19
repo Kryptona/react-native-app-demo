@@ -2,10 +2,9 @@
 import {StyleSheet, Text, View, Image, Button, ScrollView, Alert} from 'react-native';
 import {useDispatch, useSelector} from "react-redux";
 import {THEME} from "../theme";
-import {DATA} from '../data';
 import {AppHeaderIcon} from "../components/AppHeaderIcon";
 import {HeaderButtons, Item} from "react-navigation-header-buttons";
-import {toggleBooked} from "../store/actions/post";
+import {removePost, toggleBooked} from "../store/actions/post";
 
 export const PostScreen = ({route, navigation}) => {
 
@@ -13,16 +12,17 @@ export const PostScreen = ({route, navigation}) => {
 
     const postId = route.params.postId;
 
-    const post = DATA.find(post => post.id === postId);
+    const post = useSelector(state => state.post.allPosts.find(post => post.id === postId));
 
     const isBooked = useSelector(state => state.post.bookedPosts.some(post => post.id === postId));
-    
+
     useEffect(() => {
-        navigation.setParams({isBooked})
+        if(post) {
+            navigation.setParams({isBooked})
+        }
     }, [isBooked]);
 
     const toggleHandler = useCallback(() => {
-        console.log(postId);
         dispatch(toggleBooked(postId));
     }, [dispatch, postId]);
 
@@ -40,13 +40,21 @@ export const PostScreen = ({route, navigation}) => {
                     style: 'cancel'
                 },
                 {
-                    text: 'Удалить', style: 'destructive', onPress: () => {
+                    text: 'Удалить',
+                    style: 'destructive',
+                    onPress() {
+                        navigation.goBack();
+                        dispatch(removePost(postId))
                     }
                 }
             ],
             {cancelable: false}
         );
     };
+
+    if (!post) {
+        return null
+    }
 
     return (
         <ScrollView>
