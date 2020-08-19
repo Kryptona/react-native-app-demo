@@ -6,4 +6,4 @@ const rootReducer = combineReducers({
     post: postReducer
 });
 
-export default createStore(rootReducer)
+export const store = createStore(rootReducer);
